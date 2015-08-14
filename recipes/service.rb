@@ -36,8 +36,8 @@ consul_group = node['consul']['service_group']
 user "consul service user: #{consul_user}" do
   not_if { consul_user == 'root' }
   username consul_user
-  home '/dev/null'
-  shell '/bin/false'
+  home node['consul']['service_user_home']
+  shell node['consul']['service_user_shell']
   system node['consul']['system_account']
   comment 'consul service user'
 end

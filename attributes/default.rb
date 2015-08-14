@@ -94,6 +94,8 @@ else
   default['consul']['service_user'] = 'root'
   default['consul']['service_group'] = 'root'
 end
+default['consul']['service_user_shell'] = '/bin/false'
+default['consul']['service_user_home'] = '/dev/null'
 default['consul']['system_account'] = false
 
 default['consul']['ports'] = {
