@@ -39,7 +39,6 @@ user "consul service user: #{consul_user}" do
   home node['consul']['service_user_home']
   shell node['consul']['service_user_shell']
   system node['consul']['system_account']
-  comment 'consul service user'
 end
 
 # Create service group
