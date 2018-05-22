@@ -22,8 +22,8 @@ supports 'arch'
 
 recommends 'chef-provisioning'
 
-depends 'libarchive', "~> 0.4.0"
-depends 'golang', '~> 1.4'
+depends 'libarchive'
+depends 'golang'
 depends 'runit'
 depends 'yum-repoforge'
 depends 'packagecloud'
