@@ -15,7 +15,9 @@
 # limitations under the License.
 #
 
-default['consul']['base_url']       = "https://dl.bintray.com/mitchellh/consul/%{version}.zip"
+https://releases.hashicorp.com/consul/%{version}/%{filename}.zip
+
+default['consul']['base_url']       = "https://releases.hashicorp.com/consul/0.5.2/consul_0.5.2_linux_amd64.zip"
 default['consul']['version']        = '0.5.2'
 default['consul']['install_method'] = 'binary'
 default['consul']['install_dir']    = '/usr/local/bin'
