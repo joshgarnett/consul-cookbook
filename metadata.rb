@@ -24,4 +24,5 @@ recommends 'chef-provisioning'
 
 depends 'libarchive'
 depends 'golang'
-depends 'runit'
+depends 'runit', '~> 1.7'
+depends 'packagecloud', '~> 0.2'
